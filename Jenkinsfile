@@ -14,5 +14,15 @@ pipeline {
       }
     }
 
+    stage('BuildJob') {
+      steps {
+        sh 'npm i'
+        sh 'npm run build'
+        sh 'ls -a'
+        sh 'cd build'
+        sh 'ls'
+      }
+    }
+
   }
 }
