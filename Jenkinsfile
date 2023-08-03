@@ -7,5 +7,12 @@ pipeline {
       }
     }
 
+    stage('log') {
+      steps {
+        sh 'pwd'
+        sh 'ls -a'
+      }
+    }
+
   }
 }
